@@ -1,4 +1,4 @@
-package com.github.ghthou.startexceptionhandle.util;
+package com.github.ghthou.startexceptionnotifications.util;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;

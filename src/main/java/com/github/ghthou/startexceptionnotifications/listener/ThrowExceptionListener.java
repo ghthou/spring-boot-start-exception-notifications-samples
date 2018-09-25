@@ -1,4 +1,4 @@
-package com.github.ghthou.startexceptionhandle.listener;
+package com.github.ghthou.startexceptionnotifications.listener;
 
 import org.springframework.boot.context.event.ApplicationStartedEvent;
 import org.springframework.context.ApplicationListener;

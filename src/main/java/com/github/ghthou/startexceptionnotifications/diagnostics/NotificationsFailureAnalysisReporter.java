@@ -1,4 +1,4 @@
-package com.github.ghthou.startexceptionhandle.diagnostics;
+package com.github.ghthou.startexceptionnotifications.diagnostics;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.slf4j.Logger;
@@ -13,15 +13,15 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.util.StringUtils;
 
-import com.github.ghthou.startexceptionhandle.constant.ProfileConstant;
-import com.github.ghthou.startexceptionhandle.util.ApplicationTools;
+import com.github.ghthou.startexceptionnotifications.constant.ProfileConstant;
+import com.github.ghthou.startexceptionnotifications.util.ApplicationTools;
 
-public class NotifyFailureAnalysisReporter implements FailureAnalysisReporter {
+public class NotificationsFailureAnalysisReporter implements FailureAnalysisReporter {
 
     /** 收件人key */
     private static final String START_EXCEPTION_NOTIFY_EMAIL_KEY = "x-start-exception.mail.to";
 
-    private static final Logger log = LoggerFactory.getLogger(NotifyFailureAnalysisReporter.class);
+    private static final Logger log = LoggerFactory.getLogger(NotificationsFailureAnalysisReporter.class);
 
     @Override
     public void report(FailureAnalysis analysis) {

@@ -1,6 +1,6 @@
 org.springframework.boot.diagnostics.FailureAnalyzer=\
-com.github.ghthou.startexceptionhandle.diagnostics.analyzer.ExceptionFailureAnalyzer
+com.github.ghthou.startexceptionnotifications.diagnostics.analyzer.ExceptionFailureAnalyzer
 org.springframework.boot.diagnostics.FailureAnalysisReporter=\
-com.github.ghthou.startexceptionhandle.diagnostics.NotifyFailureAnalysisReporter
+com.github.ghthou.startexceptionnotifications.diagnostics.NotificationsFailureAnalysisReporter
 org.springframework.context.ApplicationListener=\
-com.github.ghthou.startexceptionhandle.listener.ThrowExceptionListener
+com.github.ghthou.startexceptionnotifications.listener.ThrowExceptionListener

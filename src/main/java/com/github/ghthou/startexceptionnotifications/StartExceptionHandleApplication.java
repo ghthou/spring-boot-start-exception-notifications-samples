@@ -1,4 +1,4 @@
-package com.github.ghthou.startexceptionhandle;
+package com.github.ghthou.startexceptionnotifications;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

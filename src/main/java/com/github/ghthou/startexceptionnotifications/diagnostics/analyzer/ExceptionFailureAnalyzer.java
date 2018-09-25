@@ -1,4 +1,4 @@
-package com.github.ghthou.startexceptionhandle.diagnostics.analyzer;
+package com.github.ghthou.startexceptionnotifications.diagnostics.analyzer;
 
 import org.springframework.boot.diagnostics.AbstractFailureAnalyzer;
 import org.springframework.boot.diagnostics.FailureAnalysis;

@@ -1,4 +1,4 @@
-package com.github.ghthou.startexceptionhandle.constant;
+package com.github.ghthou.startexceptionnotifications.constant;
 
 public class ProfileConstant {
 
