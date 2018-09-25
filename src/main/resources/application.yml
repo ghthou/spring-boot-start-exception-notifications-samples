@@ -2,6 +2,8 @@ spring:
   application:
     # 应用名称,用于与其他应用进行区分
     name: start-exception-notifications
+  profiles:
+    active: test,throwException
   mail:
     # 邮箱服务器地址,如QQ邮箱的为 smtp.qq.com,阿里云企业邮箱的为 smtp.qiye.aliyun.com
     host: smtp.example.com
