@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.ghthou</groupId>
     <artifactId>spring-boot-start-exception-notifications</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.5.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath /> <!-- lookup parent from repository -->
     </parent>
 
     <properties>
@@ -50,8 +49,38 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <checkModificationExcludes>
+                        <checkModificationExclude>pom.xml</checkModificationExclude>
+                    </checkModificationExcludes>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
+    <scm>
+        <connection>scm:git:git@github.com:ghthou/spring-boot-start-exception-notifications.git</connection>
+        <url>scm:git:git@github.com:ghthou/spring-boot-start-exception-notifications.git</url>
+        <developerConnection>scm:git:git@github.com:ghthou/spring-boot-start-exception-notifications.git</developerConnection>
+        <tag>v0.0.1</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>thou-nexus</id>
+            <name>thou-nexus-releases</name>
+            <url>http://thou:10097/repository/thou-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>thou-nexus</id>
+            <name>thou-nexus-snapshots</name>
+            <url>http://thou:10097/repository/thou-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
