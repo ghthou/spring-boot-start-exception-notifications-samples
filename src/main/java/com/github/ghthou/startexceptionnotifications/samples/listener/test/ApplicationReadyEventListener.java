@@ -1,5 +1,7 @@
 package com.github.ghthou.startexceptionnotifications.samples.listener.test;
 
+import java.text.MessageFormat;
+
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
 
@@ -7,6 +9,7 @@ public class ApplicationReadyEventListener implements ApplicationListener<Applic
 
     @Override
     public void onApplicationEvent(ApplicationReadyEvent event) {
-        throw new RuntimeException("测试");
+        throw new RuntimeException(MessageFormat.format("模拟 {0} 异常", event.getClass().getSimpleName()));
+
     }
 }
